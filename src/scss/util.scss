@@ -1,0 +1,25 @@
+/* 
+Generating util classes with breakpoints
+This is a simple example of how to generate utility classes with breakpoints using SCSS.
+*/
+@each $breakpoint, $query in (
+    sm: 640px,
+    md: 768px,
+    lg: 1024px,
+    xl: 1280px,
+    _2xl: 1536px
+) {
+    @media (min-width: $query) {
+        .#{$breakpoint}\:w-1 { width: 1rem; }
+        .#{$breakpoint}\:w-2 { width: 2rem; }
+        .#{$breakpoint}\:w-4 { width: 4rem; }
+        .#{$breakpoint}\:w-8 { width: 8rem; }
+        .#{$breakpoint}\:w-16 { width: 16rem; }
+        .#{$breakpoint}\:w-1-4 { width: 25%; }
+        .#{$breakpoint}\:w-1-2 { width: 50%; }
+        .#{$breakpoint}\:w-3-4 { width: 75%; }
+        .#{$breakpoint}\:w-full { width: 100%; }
+        .#{$breakpoint}\:w-auto { width: auto; }
+        .#{$breakpoint}\:w-screen { width: 100vw; }
+    }
+}

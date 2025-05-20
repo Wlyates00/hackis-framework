@@ -1,0 +1,181 @@
+/* 
+Generating util classes with breakpoints
+This is a simple example of how to generate utility classes with breakpoints using SCSS.
+*/
+@media (min-width: 640px) {
+  .sm\:w-1 {
+    width: 1rem;
+  }
+  .sm\:w-2 {
+    width: 2rem;
+  }
+  .sm\:w-4 {
+    width: 4rem;
+  }
+  .sm\:w-8 {
+    width: 8rem;
+  }
+  .sm\:w-16 {
+    width: 16rem;
+  }
+  .sm\:w-1-4 {
+    width: 25%;
+  }
+  .sm\:w-1-2 {
+    width: 50%;
+  }
+  .sm\:w-3-4 {
+    width: 75%;
+  }
+  .sm\:w-full {
+    width: 100%;
+  }
+  .sm\:w-auto {
+    width: auto;
+  }
+  .sm\:w-screen {
+    width: 100vw;
+  }
+}
+@media (min-width: 768px) {
+  .md\:w-1 {
+    width: 1rem;
+  }
+  .md\:w-2 {
+    width: 2rem;
+  }
+  .md\:w-4 {
+    width: 4rem;
+  }
+  .md\:w-8 {
+    width: 8rem;
+  }
+  .md\:w-16 {
+    width: 16rem;
+  }
+  .md\:w-1-4 {
+    width: 25%;
+  }
+  .md\:w-1-2 {
+    width: 50%;
+  }
+  .md\:w-3-4 {
+    width: 75%;
+  }
+  .md\:w-full {
+    width: 100%;
+  }
+  .md\:w-auto {
+    width: auto;
+  }
+  .md\:w-screen {
+    width: 100vw;
+  }
+}
+@media (min-width: 1024px) {
+  .lg\:w-1 {
+    width: 1rem;
+  }
+  .lg\:w-2 {
+    width: 2rem;
+  }
+  .lg\:w-4 {
+    width: 4rem;
+  }
+  .lg\:w-8 {
+    width: 8rem;
+  }
+  .lg\:w-16 {
+    width: 16rem;
+  }
+  .lg\:w-1-4 {
+    width: 25%;
+  }
+  .lg\:w-1-2 {
+    width: 50%;
+  }
+  .lg\:w-3-4 {
+    width: 75%;
+  }
+  .lg\:w-full {
+    width: 100%;
+  }
+  .lg\:w-auto {
+    width: auto;
+  }
+  .lg\:w-screen {
+    width: 100vw;
+  }
+}
+@media (min-width: 1280px) {
+  .xl\:w-1 {
+    width: 1rem;
+  }
+  .xl\:w-2 {
+    width: 2rem;
+  }
+  .xl\:w-4 {
+    width: 4rem;
+  }
+  .xl\:w-8 {
+    width: 8rem;
+  }
+  .xl\:w-16 {
+    width: 16rem;
+  }
+  .xl\:w-1-4 {
+    width: 25%;
+  }
+  .xl\:w-1-2 {
+    width: 50%;
+  }
+  .xl\:w-3-4 {
+    width: 75%;
+  }
+  .xl\:w-full {
+    width: 100%;
+  }
+  .xl\:w-auto {
+    width: auto;
+  }
+  .xl\:w-screen {
+    width: 100vw;
+  }
+}
+@media (min-width: 1536px) {
+  ._2xl\:w-1 {
+    width: 1rem;
+  }
+  ._2xl\:w-2 {
+    width: 2rem;
+  }
+  ._2xl\:w-4 {
+    width: 4rem;
+  }
+  ._2xl\:w-8 {
+    width: 8rem;
+  }
+  ._2xl\:w-16 {
+    width: 16rem;
+  }
+  ._2xl\:w-1-4 {
+    width: 25%;
+  }
+  ._2xl\:w-1-2 {
+    width: 50%;
+  }
+  ._2xl\:w-3-4 {
+    width: 75%;
+  }
+  ._2xl\:w-full {
+    width: 100%;
+  }
+  ._2xl\:w-auto {
+    width: auto;
+  }
+  ._2xl\:w-screen {
+    width: 100vw;
+  }
+}
+
+/*# sourceMappingURL=util-responsive.css.map */

@@ -1,0 +1,50 @@
+/*
+This the the base styles for Hackis
+*/
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #ebedf0;
+    color: black;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lucida Console', Monaco, monospace;
+    color: #2c3e50;
+    margin: 0.5em 0;
+}
+
+p {
+    margin: 0.5em 0;
+}
+
+a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+}
