@@ -29,13 +29,6 @@ a:hover {
     text-decoration: underline;
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
 .row {
     display: flex;
     flex-wrap: wrap;

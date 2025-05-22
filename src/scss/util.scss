@@ -8,8 +8,9 @@ This is a simple example of how to generate utility classes with breakpoints usi
     lg: 1024px,
     xl: 1280px,
     _2xl: 1536px
-) {
+) { // Width, Height, Margin, Padding
     @media (min-width: $query) {
+        // Width and height utilities
         .#{$breakpoint}\:w-1 { width: 1rem; }
         .#{$breakpoint}\:w-2 { width: 2rem; }
         .#{$breakpoint}\:w-4 { width: 4rem; }
@@ -21,5 +22,245 @@ This is a simple example of how to generate utility classes with breakpoints usi
         .#{$breakpoint}\:w-full { width: 100%; }
         .#{$breakpoint}\:w-auto { width: auto; }
         .#{$breakpoint}\:w-screen { width: 100vw; }
+
+        .#{$breakpoint}\:h-1 { height: 1rem; }
+        .#{$breakpoint}\:h-2 { height: 2rem; }
+        .#{$breakpoint}\:h-4 { height: 4rem; }
+        .#{$breakpoint}\:h-8 { height: 8rem; }
+        .#{$breakpoint}\:h-16 { height: 16rem; }
+        .#{$breakpoint}\:h-1-4 { height: 25%; }
+        .#{$breakpoint}\:h-1-2 { height: 50%; }
+        .#{$breakpoint}\:h-3-4 { height: 75%; }
+        .#{$breakpoint}\:h-full { height: 100%; }
+        .#{$breakpoint}\:h-auto { height: auto; }
+        .#{$breakpoint}\:h-screen { height: 100vh; }
+
+        // Margin and padding utilities
+        .#{$breakpoint}\:m-1 { margin: 1rem; }
+        .#{$breakpoint}\:m-2 { margin: 2rem; }
+        .#{$breakpoint}\:m-4 { margin: 4rem; }
+        .#{$breakpoint}\:m-8 { margin: 8rem; }
+        .#{$breakpoint}\:m-16 { margin: 16rem; }
+        .#{$breakpoint}\:m-1-4 { margin: 25%; }
+        .#{$breakpoint}\:m-1-2 { margin: 50%; }
+        .#{$breakpoint}\:m-3-4 { margin: 75%; }
+        .#{$breakpoint}\:m-0 { margin: 0; }
+
+        .#{$breakpoint}\:mx-1 { margin-left: 1rem; margin-right: 1rem; }
+        .#{$breakpoint}\:mx-2 { margin-left: 2rem; margin-right: 2rem; }
+        .#{$breakpoint}\:mx-4 { margin-left: 4rem; margin-right: 4rem; }
+        .#{$breakpoint}\:mx-8 { margin-left: 8rem; margin-right: 8rem; }
+        .#{$breakpoint}\:mx-16 { margin-left: 16rem; margin-right: 16rem; }
+        .#{$breakpoint}\:mx-1-4 { margin-left: 25%; margin-right: 25%; }
+        .#{$breakpoint}\:mx-1-2 { margin-left: 50%; margin-right: 50%; }
+        .#{$breakpoint}\:mx-3-4 { margin-left: 75%; margin-right: 75%; }
+        .#{$breakpoint}\:mx-0 { margin-left: 0; margin-right: 0; }
+
+        .#{$breakpoint}\:my-1 { margin-top: 1rem; margin-bottom: 1rem; }
+        .#{$breakpoint}\:my-2 { margin-top: 2rem; margin-bottom: 2rem; }
+        .#{$breakpoint}\:my-4 { margin-top: 4rem; margin-bottom: 4rem; }
+        .#{$breakpoint}\:my-8 { margin-top: 8rem; margin-bottom: 8rem; }
+        .#{$breakpoint}\:my-16 { margin-top: 16rem; margin-bottom: 16rem; }
+        .#{$breakpoint}\:my-1-4 { margin-top: 25%; margin-bottom: 25%; }
+        .#{$breakpoint}\:my-1-2 { margin-top: 50%; margin-bottom: 50%; }
+        .#{$breakpoint}\:my-3-4 { margin-top: 75%; margin-bottom: 75%; }
+        .#{$breakpoint}\:my-0 { margin-top: 0; margin-bottom: 0; }
+
+        .#{$breakpoint}\:mt-1 { margin-top: 1rem; }
+        .#{$breakpoint}\:mt-2 { margin-top: 2rem; }
+        .#{$breakpoint}\:mt-4 { margin-top: 4rem; }
+        .#{$breakpoint}\:mt-8 { margin-top: 8rem; }
+        .#{$breakpoint}\:mt-16 { margin-top: 16rem; }
+        .#{$breakpoint}\:mt-1-4 { margin-top: 25%; }
+        .#{$breakpoint}\:mt-1-2 { margin-top: 50%; }
+        .#{$breakpoint}\:mt-3-4 { margin-top: 75%; }
+        .#{$breakpoint}\:mt-0 { margin-top: 0; }
+
+        .#{$breakpoint}\:mr-1 { margin-right: 1rem; }
+        .#{$breakpoint}\:mr-2 { margin-right: 2rem; }
+        .#{$breakpoint}\:mr-4 { margin-right: 4rem; }
+        .#{$breakpoint}\:mr-8 { margin-right: 8rem; }
+        .#{$breakpoint}\:mr-16 { margin-right: 16rem; }
+        .#{$breakpoint}\:mr-1-4 { margin-right: 25%; }
+        .#{$breakpoint}\:mr-1-2 { margin-right: 50%; }
+        .#{$breakpoint}\:mr-3-4 { margin-right: 75%; }
+        .#{$breakpoint}\:mr-0 { margin-right: 0; }
+
+        .#{$breakpoint}\:mb-1 { margin-bottom: 1rem; }
+        .#{$breakpoint}\:mb-2 { margin-bottom: 2rem; }
+        .#{$breakpoint}\:mb-4 { margin-bottom: 4rem; }
+        .#{$breakpoint}\:mb-8 { margin-bottom: 8rem; }
+        .#{$breakpoint}\:mb-16 { margin-bottom: 16rem; }
+        .#{$breakpoint}\:mb-1-4 { margin-bottom: 25%; }
+        .#{$breakpoint}\:mb-1-2 { margin-bottom: 50%; }
+        .#{$breakpoint}\:mb-3-4 { margin-bottom: 75%; }
+        .#{$breakpoint}\:mb-0 { margin-bottom: 0; }
+
+        .#{$breakpoint}\:ml-1 { margin-left: 1rem; }
+        .#{$breakpoint}\:ml-2 { margin-left: 2rem; }
+        .#{$breakpoint}\:ml-4 { margin-left: 4rem; }
+        .#{$breakpoint}\:ml-8 { margin-left: 8rem; }
+        .#{$breakpoint}\:ml-16 { margin-left: 16rem; }
+        .#{$breakpoint}\:ml-1-4 { margin-left: 25%; }
+        .#{$breakpoint}\:ml-1-2 { margin-left: 50%; }
+        .#{$breakpoint}\:ml-3-4 { margin-left: 75%; }
+        .#{$breakpoint}\:ml-0 { margin-left: 0; }
+
+        .#{$breakpoint}\:p-1 { padding: 1rem; }
+        .#{$breakpoint}\:p-2 { padding: 2rem; }
+        .#{$breakpoint}\:p-4 { padding: 4rem; }
+        .#{$breakpoint}\:p-8 { padding: 8rem; }
+        .#{$breakpoint}\:p-16 { padding: 16rem; }
+        .#{$breakpoint}\:p-1-4 { padding: 25%; }
+        .#{$breakpoint}\:p-1-2 { padding: 50%; }
+        .#{$breakpoint}\:p-3-4 { padding: 75%; }
+        .#{$breakpoint}\:p-0 { padding: 0; }
+
+        .#{$breakpoint}\:px-1 { padding-left: 1rem; padding-right: 1rem; }
+        .#{$breakpoint}\:px-2 { padding-left: 2rem; padding-right: 2rem; }
+        .#{$breakpoint}\:px-4 { padding-left: 4rem; padding-right: 4rem; }
+        .#{$breakpoint}\:px-8 { padding-left: 8rem; padding-right: 8rem; }
+        .#{$breakpoint}\:px-16 { padding-left: 16rem; padding-right: 16rem; }
+        .#{$breakpoint}\:px-1-4 { padding-left: 25%; padding-right: 25%; }
+        .#{$breakpoint}\:px-1-2 { padding-left: 50%; padding-right: 50%; }
+        .#{$breakpoint}\:px-3-4 { padding-left: 75%; padding-right: 75%; }
+        .#{$breakpoint}\:px-0 { padding-left: 0; padding-right: 0; }
+
+        .#{$breakpoint}\:py-1 { padding-top: 1rem; padding-bottom: 1rem; }
+        .#{$breakpoint}\:py-2 { padding-top: 2rem; padding-bottom: 2rem; }
+        .#{$breakpoint}\:py-4 { padding-top: 4rem; padding-bottom: 4rem; }
+        .#{$breakpoint}\:py-8 { padding-top: 8rem; padding-bottom: 8rem; }
+        .#{$breakpoint}\:py-16 { padding-top: 16rem; padding-bottom: 16rem; }
+        .#{$breakpoint}\:py-1-4 { padding-top: 25%; padding-bottom: 25%; }
+        .#{$breakpoint}\:py-1-2 { padding-top: 50%; padding-bottom: 50%; }
+        .#{$breakpoint}\:py-3-4 { padding-top: 75%; padding-bottom: 75%; }
+        .#{$breakpoint}\:py-0 { padding-top: 0; padding-bottom: 0; }
+
+        .#{$breakpoint}\:pt-1 { padding-top: 1rem; }
+        .#{$breakpoint}\:pt-2 { padding-top: 2rem; }
+        .#{$breakpoint}\:pt-4 { padding-top: 4rem; }
+        .#{$breakpoint}\:pt-8 { padding-top: 8rem; }
+        .#{$breakpoint}\:pt-16 { padding-top: 16rem; }
+        .#{$breakpoint}\:pt-1-4 { padding-top: 25%; }
+        .#{$breakpoint}\:pt-1-2 { padding-top: 50%; }
+        .#{$breakpoint}\:pt-3-4 { padding-top: 75%; }
+        .#{$breakpoint}\:pt-0 { padding-top: 0; }
+
+        .#{$breakpoint}\:pr-1 { padding-right: 1rem; }
+        .#{$breakpoint}\:pr-2 { padding-right: 2rem; }
+        .#{$breakpoint}\:pr-4 { padding-right: 4rem; }
+        .#{$breakpoint}\:pr-8 { padding-right: 8rem; }
+        .#{$breakpoint}\:pr-16 { padding-right: 16rem; }
+        .#{$breakpoint}\:pr-1-4 { padding-right: 25%; }
+        .#{$breakpoint}\:pr-1-2 { padding-right: 50%; }
+        .#{$breakpoint}\:pr-3-4 { padding-right: 75%; }
+        .#{$breakpoint}\:pr-0 { padding-right: 0; }
+
+        .#{$breakpoint}\:pb-1 { padding-bottom: 1rem; }
+        .#{$breakpoint}\:pb-2 { padding-bottom: 2rem; }
+        .#{$breakpoint}\:pb-4 { padding-bottom: 4rem; }
+        .#{$breakpoint}\:pb-8 { padding-bottom: 8rem; }
+        .#{$breakpoint}\:pb-16 { padding-bottom: 16rem; }
+        .#{$breakpoint}\:pb-1-4 { padding-bottom: 25%; }
+        .#{$breakpoint}\:pb-1-2 { padding-bottom: 50%; }
+        .#{$breakpoint}\:pb-3-4 { padding-bottom: 75%; }
+        .#{$breakpoint}\:pb-0 { padding-bottom: 0; }
+
+        .#{$breakpoint}\:pl-1 { padding-left: 1rem; }
+        .#{$breakpoint}\:pl-2 { padding-left: 2rem; }
+        .#{$breakpoint}\:pl-4 { padding-left: 4rem; }
+        .#{$breakpoint}\:pl-8 { padding-left: 8rem; }
+        .#{$breakpoint}\:pl-16 { padding-left: 16rem; }
+        .#{$breakpoint}\:pl-1-4 { padding-left: 25%; }
+        .#{$breakpoint}\:pl-1-2 { padding-left: 50%; }
+        .#{$breakpoint}\:pl-3-4 { padding-left: 75%; }
+        .#{$breakpoint}\:pl-0 { padding-left: 0; }
+    }
+}
+
+@each $breakpoint, $query in (
+    sm: 640px,
+    md: 768px,
+    lg: 1024px,
+    xl: 1280px,
+    _2xl: 1536px
+) { // Text, color, background color
+    @media (min-width: $query) {
+        // Text utilities
+        .#{$breakpoint}\:text-xs { font-size: 0.6rem; }
+        .#{$breakpoint}\:text-sm { font-size: 0.8rem; }
+        .#{$breakpoint}\:text-md { font-size: 1rem; }
+        .#{$breakpoint}\:text-lg { font-size: 1.2rem; }
+        .#{$breakpoint}\:text-xl { font-size: 1.5rem; }
+        .#{$breakpoint}\:text-2xl { font-size: 2rem; }
+        .#{$breakpoint}\:text-3xl { font-size: 2.5rem; }
+        .#{$breakpoint}\:text-4xl { font-size: 3rem; }
+
+        // Color utilities
+        .#{$breakpoint}\:color-black { color: black; }
+        .#{$breakpoint}\:color-white { color: white; }
+        .#{$breakpoint}\:color-gray { color: gray; }
+        .#{$breakpoint}\:color-red { color: red; }
+        .#{$breakpoint}\:color-green { color: green; }
+        .#{$breakpoint}\:color-blue { color: blue; }
+        .#{$breakpoint}\:color-yellow { color: yellow; }
+        .#{$breakpoint}\:color-purple { color: purple; }
+        .#{$breakpoint}\:color-orange { color: orange; }
+        .#{$breakpoint}\:color-pink { color: pink; }
+        .#{$breakpoint}\:color-teal { color: teal; }
+        .#{$breakpoint}\:color-brown { color: brown; }
+        .#{$breakpoint}\:color-cyan { color: cyan; }
+        .#{$breakpoint}\:color-light-gray { color: lightgray; }
+        .#{$breakpoint}\:color-dark-gray { color: darkgray; }
+        .#{$breakpoint}\:color-light-blue { color: lightblue; }
+        .#{$breakpoint}\:color-light-green { color: lightgreen; }
+        .#{$breakpoint}\:color-light-red { color: lightcoral; }
+        .#{$breakpoint}\:color-light-yellow { color: lightyellow; }
+        .#{$breakpoint}\:color-light-purple { color: mediumpurple; }
+
+        // Text alignment and transform utilities
+        .#{$breakpoint}\:text-left { text-align: left; }
+        .#{$breakpoint}\:text-center { text-align: center; }
+        .#{$breakpoint}\:text-right { text-align: right; }
+        .#{$breakpoint}\:text-justify { text-align: justify; }
+        .#{$breakpoint}\:text-uppercase { text-transform: uppercase; }
+        .#{$breakpoint}\:text-lowercase { text-transform: lowercase; }
+        .#{$breakpoint}\:text-capitalize { text-transform: capitalize; }
+
+        // Font style utilities
+        .#{$breakpoint}\:text-bold { font-weight: bold; }
+        .#{$breakpoint}\:text-italic { font-style: italic; }
+        .#{$breakpoint}\:text-underline { text-decoration: underline; }
+        .#{$breakpoint}\:text-strike { text-decoration: line-through; }
+        .#{$breakpoint}\:text-overline { text-decoration: overline; }
+
+        // Text shadow utilities
+        .#{$breakpoint}\:text-shadow { text-shadow: 1px 1px 2px black; }
+        .#{$breakpoint}\:text-no-shadow { text-shadow: none; }
+
+        // Background color utilities
+        .#{$breakpoint}\:bg-black { background-color: black; }
+        .#{$breakpoint}\:bg-white { background-color: white; }
+        .#{$breakpoint}\:bg-gray { background-color: gray; }
+        .#{$breakpoint}\:bg-red { background-color: red; }
+        .#{$breakpoint}\:bg-green { background-color: green; }
+        .#{$breakpoint}\:bg-blue { background-color: blue; }
+        .#{$breakpoint}\:bg-yellow { background-color: yellow; }
+        .#{$breakpoint}\:bg-purple { background-color: purple; }
+        .#{$breakpoint}\:bg-orange { background-color: orange; }
+        .#{$breakpoint}\:bg-pink { background-color: pink; }
+        .#{$breakpoint}\:bg-teal { background-color: teal; }
+        .#{$breakpoint}\:bg-brown { background-color: brown; }
+        .#{$breakpoint}\:bg-cyan { background-color: cyan; }
+        .#{$breakpoint}\:bg-light-gray { background-color: lightgray; }
+        .#{$breakpoint}\:bg-dark-gray { background-color: darkgray; }
+        .#{$breakpoint}\:bg-light-blue { background-color: lightblue; }
+        .#{$breakpoint}\:bg-light-green { background-color: lightgreen; }
+        .#{$breakpoint}\:bg-light-red { background-color: lightcoral; }
+        .#{$breakpoint}\:bg-light-yellow { background-color: lightyellow; }
+        .#{$breakpoint}\:bg-light-purple { background-color: mediumpurple; }
+    }
+    @media (min-width: $query) {
+
     }
 }

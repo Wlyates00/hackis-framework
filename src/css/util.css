@@ -33,7 +33,9 @@ Margin and Padding
 .m-4 { margin: 4rem; }
 .m-8 { margin: 8rem; }
 .m-16 { margin: 16rem; }
+.m-1-4 { margin: 25%; }
 .m-1-2 { margin: 50%; }
+.m-3-4 { margin: 75%; }
 .m-auto { margin: auto; }
 .mx-auto { margin-left: auto; margin-right: auto; }
 .mt-1 { margin-top: 1rem; }
@@ -41,25 +43,33 @@ Margin and Padding
 .mt-4 { margin-top: 4rem; }
 .mt-8 { margin-top: 8rem; }
 .mt-16 { margin-top: 16rem; }
+.mt-1-4 { margin-top: 25%; }
 .mt-1-2 { margin-top: 50%; }
+.mt-3-4 { margin-top: 75%; }
 .mb-1 { margin-bottom: 1rem; }
 .mb-2 { margin-bottom: 2rem; }
 .mb-4 { margin-bottom: 4rem; }
 .mb-8 { margin-bottom: 8rem; }
 .mb-16 { margin-bottom: 16rem; }
+.mb-1-4 { margin-bottom: 25%; }
 .mb-1-2 { margin-bottom: 50%; }
+.mb-3-4 { margin-bottom: 75%; }
 .ml-1 { margin-left: 1rem; }
 .ml-2 { margin-left: 2rem; }
 .ml-4 { margin-left: 4rem; }
 .ml-8 { margin-left: 8rem; }
 .ml-16 { margin-left: 16rem; }
+.ml-1-4 { margin-left: 25%; }
 .ml-1-2 { margin-left: 50%; }
+.ml-3-4 { margin-left: 75%; }
 .mr-1 { margin-right: 1rem; }
 .mr-2 { margin-right: 2rem; }
 .mr-4 { margin-right: 4rem; }
 .mr-8 { margin-right: 8rem; }
 .mr-16 { margin-right: 16rem; }
+.mr-1-4 { margin-right: 25%; }
 .mr-1-2 { margin-right: 50%; }
+.mr-3-4 { margin-right: 75%; }
 
 
 .p-1 { padding: 1rem; }
@@ -94,6 +104,31 @@ Margin and Padding
 .pr-8 { padding-right: 8rem; }
 .pr-16 { padding-right: 16rem; }
 .pr-1-2 { padding-right: 50%; }
+
+/*
+Gap
+*/
+.gap-1 { gap: 1rem; }
+.gap-2 { gap: 2rem; }
+.gap-4 { gap: 4rem; }
+.gap-8 { gap: 8rem; }
+.gap-16 { gap: 16rem; }
+.gap-1-2 { gap: 50%; }
+.gap-auto { gap: auto; }
+.gap-x-auto { gap: auto; }
+.gap-y-auto { gap: auto; }
+.gap-x-1 { gap: 1rem; }
+.gap-x-2 { gap: 2rem; }
+.gap-x-4 { gap: 4rem; }
+.gap-x-8 { gap: 8rem; }
+.gap-x-16 { gap: 16rem; }
+.gap-x-1-2 { gap: 50%; }
+.gap-y-1 { gap: 1rem; }
+.gap-y-2 { gap: 2rem; }
+.gap-y-4 { gap: 4rem; }
+.gap-y-8 { gap: 8rem; }
+.gap-y-16 { gap: 16rem; }
+.gap-y-1-2 { gap: 50%; }
 
 /*
 Border
@@ -176,3 +211,27 @@ Text and Font
 .text-2xl { font-size: 2rem; }
 .text-3xl { font-size: 2.5rem; }
 .text-4xl { font-size: 3rem; }
+
+/*
+Background Color Utilities
+*/
+.bg-black { background-color: black; }
+.bg-white { background-color: white; }
+.bg-gray { background-color: gray; }
+.bg-red { background-color: red; }
+.bg-green { background-color: green; }
+.bg-blue { background-color: blue; }
+.bg-yellow { background-color: yellow; }
+.bg-purple { background-color: purple; }
+.bg-orange { background-color: orange; }
+.bg-pink { background-color: pink; }
+.bg-teal { background-color: teal; }
+.bg-brown { background-color: brown; }
+.bg-cyan { background-color: cyan; }
+.bg-light-gray { background-color: lightgray; }
+.bg-dark-gray { background-color: darkgray; }
+.bg-light-blue { background-color: lightblue; }
+.bg-light-green { background-color: lightgreen; }
+.bg-light-red { background-color: lightcoral; }
+.bg-light-yellow { background-color: lightyellow; }
+.bg-light-purple { background-color: mediumpurple; }
