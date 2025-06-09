@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hackis Documetation</title>
     <link rel="stylesheet" href="src/index.css">
+    <script src="src/js/hackis.js"></script>
 </head>
 <body>
     <div class="container">
@@ -25,14 +26,15 @@
     <hr class="m-0 double-border w-screen"/>
 
     <div class="container">
-
         <h2>Button Examples</h2>
-        <button class="button-primary">Primary</button>
-        <button class="button-secondary">Secondary</button>
-        <button class="button-primary bg-light-green color-green">Custom</button>
-        <button class="button-secondary bg-green color-light-green">Custom</button>
-        <div class="doc-container mt-1">
-            <div class="doc-title">HTML Examples</div>
+        <div class="flex-row w-full h-center gap-1">
+            <button class="button-primary">Primary</button>
+            <button class="button-secondary">Secondary</button>
+            <button class="button-primary bg-light-green color-green">Custom</button>
+            <button class="button-secondary bg-green color-light-green">Custom</button>
+        </div>
+        <div class="code-block mt-1">
+            <div class="code-title">HTML Examples</div>
             <pre><code>&lt;button class="button-primary"&gt;Primary&lt;/button&gt;</code></pre>
             <pre><code>&lt;button class="button-secondary"&gt;Secondary&lt;/button&gt;</code></pre>
             <pre><code>&lt;button class="button-primary bg-light-green color-green"&gt;Primary&lt;/button&gt;</code></pre>
@@ -59,8 +61,8 @@
             </div>
         </div>
 
-        <div class="doc-container mt-1">
-            <div class="doc-title">HTML Examples</div>
+        <div class="code-block mt-1">
+            <div class="code-title">HTML Examples</div>
 <pre><code>&lt;div class="card"&gt;
     &lt;h3&gt;Card Title&lt;/h3&gt;
     &lt;p&gt;The card components are simple but effective! Anything beyond this simple can be customized with utilities.&lt;/p&gt;
@@ -74,6 +76,123 @@
 &lt;/div&gt;</code></pre>
         </div>
     </div>
-    
+
+    <hr class="ml-4 mr-4"/>
+
+    <div class="container">
+        <h2>Table Examples</h2>
+        <div class="md:w-3-4 w-full table m-auto">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Components & Utilities</th>
+                        <th>Usage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Buttons, Cards, tables, etc.</td>
+                        <td>Components to make the development of documentation faster & easier.</td>
+                    </tr>
+                    <tr>
+                        <td>Flexing, Fonts, Colors, etc.</td>
+                        <td>Utilities for layout, typography, and color management.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="code-block mt-1">
+            <div class="code-title">HTML Examples</div>
+            <pre><code>&lt;div class="table"&gt;
+    &lt;table&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;Components &amp; Utilities&lt;/th&gt;
+                &lt;th&gt;Usage&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Buttons, Cards, tables, etc.&lt;/td&gt;
+                &lt;td&gt;Components to make the development of documentation faster &amp; easier.&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Flexing, Fonts, Colors, etc.&lt;/td&gt;
+                &lt;td&gt;Utilities for layout, typography, and color management.&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+        
+    </div>
+
+    <div class="container">
+        <h2>Tabs Example</h2>
+        
+        <div class="md:w-1-2 w-full m-auto">
+            <div class="tabs">
+                <button class="tab active" data-tab="tab1">HTML</button>
+                <button class="tab" data-tab="tab2">CSS</button>
+                <button class="tab" data-tab="tab3">JS</button>
+            </div>
+            <div class="tab-content active" id="tab1">
+                <pre><code>&lt;h1&gt;Hello World&lt;/h1&gt;</code></pre>
+            </div>
+            <div class="tab-content" id="tab2">
+                <pre><code>h1 { color: green; }</code></pre>
+            </div>
+            <div class="tab-content" id="tab3">
+                <pre><code>console.log('Hello World');</code></pre>
+            </div>
+        </div>
+
+        <div class="code-block mt-1">
+            <div class="code-title">HTML Examples</div>
+            <pre><code>&lt;div class="tabs"&gt;
+    &lt;button class="tab active" data-tab="tab1"&gt;HTML&lt;/button&gt;
+    &lt;button class="tab" data-tab="tab2"&gt;CSS&lt;/button&gt;
+    &lt;button class="tab" data-tab="tab3"&gt;JS&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class="tab-content active" id="tab1"&gt;
+    &lt;pre&gt;&lt;code&gt;&amp;lt;h1&amp;gt;Hello World&amp;lt;/h1&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="tab-content" id="tab2"&gt;
+    &lt;pre&gt;&lt;code&gt;h1 { color: green; }&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="tab-content" id="tab3"&gt;
+    &lt;pre&gt;&lt;code&gt;console.log('Hello World');&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="container">
+        <h2>Breadcrumbs Example</h2>
+        <div class="flex-row h-center w-full">
+            <div class="breadcrumbs">
+                <a href="#">Home</a>
+                <span class="breadcrumb-sep">/</span>
+                <a href="#">Users</a>
+                <span class="breadcrumb-sep">/</span>
+                <a href="#">User Profile</a>
+                <span class="breadcrumb-sep">/</span>
+                <span>Data</span>
+            </div>
+        </div>
+        <div class="code-block mt-1">
+            <div class="code-title">HTML Examples</div>
+            <pre><code>&lt;div class="breadcrumbs"&gt;
+    &lt;a href="#"&gt;Home&lt;/a&gt;
+    &lt;span class="breadcrumb-sep"&gt;/&lt;/span&gt;
+    &lt;a href="#"&gt;Users&lt;/a&gt;
+    &lt;span class="breadcrumb-sep"&gt;/&lt;/span&gt;
+    &lt;a href="#"&gt;User Profile&lt;/a&gt;
+    &lt;span class="breadcrumb-sep"&gt;/&lt;/span&gt;
+    &lt;a href="#"&gt;Settings&lt;/a&gt;
+    &lt;span class="breadcrumb-sep"&gt;/&lt;/span&gt;
+    &lt;span&gt;Data&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
 </body>
 </html>

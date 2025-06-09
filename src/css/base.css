@@ -41,3 +41,11 @@ a:hover {
     padding: 10px;
     box-sizing: border-box;
 }
+
+pre, code {
+    white-space: pre-wrap;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    background: none; /* or your preferred background */
+    color: inherit;   /* or your preferred color */
+}

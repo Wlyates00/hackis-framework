@@ -4,13 +4,13 @@ Hackis is a lightweight, simple but clean CSS utility and component framework de
 
 ## Features
 
-- **Rapid Development:** Utility-first classes and ready-to-use components for instant layouts and styling.
-- **Clean Documentaion/Programming Aesthetic:** Clean, "programmy" styles perfect for technical docs, prototypes, and dev-focused sites.
-- **Responsive Utilities:** Easy-to-use responsive classes (`sm:`, `md:`, `lg:`, etc.) for mobile-friendly designs.
-- **Customizable Components:** Buttons, containers, cards, and more—ready to drop into your project.
-- **Simple Setup:** No complex build steps required—just include the CSS and start building.
+-  **Rapid Development:** Utility-first classes and ready-to-use components for instant layouts and styling.
+-  **Clean Documentaion/Programming Aesthetic:** Clean, "programmy" styles perfect for technical docs, prototypes, and dev-focused sites.
+-  **Responsive Utilities:** Easy-to-use responsive classes (`sm:`, `md:`, `lg:`, etc.) for mobile-friendly designs.
+-  **Customizable Components:** Buttons, containers, cards, and more—ready to drop into your project.
+-  **Simple Setup:** No complex build steps required—just include the CSS and start building.
 
-## Getting Started With The Demo
+## Getting Started With The Demo (NOT YET PUBLIC)
 
 1. **Install Hackis:**
 
@@ -27,10 +27,19 @@ Hackis is a lightweight, simple but clean CSS utility and component framework de
    @import "./css/util-responsive.css";
    ```
 
-3. **Start building!**
+3. **Include hackis.js in your HTML:**
+
+   ```html
+   <head>
+      <!-- Existing HTML Header code above -->
+      <link src="./js/hackis.js" />
+   </head>
+   ```
+
+4. **Start building!**
    ```html
    <div class="container">
-     <button class="button-primary w-full md:w-1-2">Click Me</button>
+      <button class="button-primary w-full md:w-1-2">Click Me</button>
    </div>
    ```
 
@@ -38,17 +47,17 @@ Hackis is a lightweight, simple but clean CSS utility and component framework de
 
 ```html
 <div class="container">
-  <h1 class="text-center">Welcome to Hackis</h1>
-  <button class="button-primary bg-light-green">Primary</button>
-  <button class="button-secondary bg-dark-gray">Secondary</button>
+   <h1 class="text-center">Welcome to Hackis</h1>
+   <button class="button-primary bg-light-green">Primary</button>
+   <button class="button-secondary bg-dark-gray">Secondary</button>
 </div>
 ```
 
 ## Why Hackis?
 
-- **Game-changing for documentation:** Build beautiful, readable docs in minutes.
-- **Perfect for devs:** Minimalist, code-inspired look and feel.
-- **No bloat:** Only the utilities and components you need.
+-  **Game-changing for documentation:** Build beautiful, readable docs in minutes.
+-  **Perfect for devs:** Minimalist, code-inspired look and feel.
+-  **No bloat:** Only the utilities and components you need.
 
 ---
 

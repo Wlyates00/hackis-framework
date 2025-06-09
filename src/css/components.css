@@ -41,7 +41,7 @@ This file contains the CSS styles for most components that are used in Hackis.
     box-sizing: border-box;
 }
 
-.doc-container {
+.code-block {
     background-color: #3e3e3e;
     border-radius: 5px;
     padding: 20px;
@@ -51,7 +51,8 @@ This file contains the CSS styles for most components that are used in Hackis.
     max-width: 100%;
     box-sizing: border-box;
 }
-.doc-title {
+
+.code-title {
     padding: 2px;
     font-size: .74rem;
     width: 100%;
@@ -73,6 +74,7 @@ This file contains the CSS styles for most components that are used in Hackis.
     padding: 0;
     overflow: hidden;
 }
+
 .card-img img {
     display: block;
     margin-left: auto;
@@ -94,4 +96,71 @@ This file contains the CSS styles for most components that are used in Hackis.
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+}
+
+/* Table styles */
+
+.table table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+.table th, .table td {
+    border: 1px solid #ddd;
+    padding: 8px
+}
+
+/* Tabs styles */
+.tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 0;
+}
+.tab {
+    background: #3e3e3e;
+    color: #e3eaf2;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 6px 6px 0 0;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+.tab.active, .tab:hover {
+    background: #7cb342;
+    color: #3e3e3e;
+}
+.tab-content {
+    display: none;
+    background: #3e3e3e;
+    color: white;
+    border-radius: 0 0 6px 6px;
+    padding: 1em;
+}
+.tab-content.active {
+    display: block;
+}
+
+/* Breadcrumb styles */
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    margin-bottom: 1em;
+    gap: 0.5em;
+}
+.breadcrumbs a {
+    color: #7cb342;
+    text-decoration: none;
+    font-weight: 500;
+}
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+.breadcrumb-sep {
+    color: #b0bec5;
+}
+.breadcrumbs span:last-child {
+    color: black;
+    font-weight: 500;
 }
